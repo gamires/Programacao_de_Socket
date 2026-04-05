@@ -1,8 +1,7 @@
 import socket
 import conect4 # Importa as funções do seu arquivo conect4.py
 
-# --- REGRA DO PROFESSOR: Coloque os 5 primeiros dígitos do seu TIA aqui ---
-PORTA_TIA = 12345 
+PORTA_TIA = 10443 
 
 def iniciar_servidor():
     # Configurando o Socket TCP

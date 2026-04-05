@@ -1,7 +1,6 @@
 import socket
 
-# REGRA: Use os 5 primeiros números do seu TIA
-PORTA = 12345 
+PORTA = 10443 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('localhost', PORTA))

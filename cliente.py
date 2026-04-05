@@ -1,7 +1,7 @@
 import socket
 import conect4
 
-PORTA_TIA = 12345 # Deve ser a mesma porta do servidor
+PORTA_TIA = 10443 # Mesma porta do servidor
 
 def iniciar_cliente():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

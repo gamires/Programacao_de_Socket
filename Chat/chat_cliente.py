@@ -1,7 +1,6 @@
 import socket
 
-# --- REGRA DO PROFESSOR: Substitua pelos 5 primeiros números do seu TIA ---
-PORTA = 12345 
+PORTA = 10443 # Mesma porta do servidor
 IP_SERVIDOR = 'localhost'
 
 def iniciar_cliente():

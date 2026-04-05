@@ -9,7 +9,7 @@ COLUNA_QTD = 7
 def criar_tabuleiro():
     tabuleiro = np.zeros((LINHA_QTD,COLUNA_QTD))
     return tabuleiro
-def joga_peca(talubeiro, linha, coluna, peca):
+def joga_peca(tabuleiro, linha, coluna, peca):
     tabuleiro[linha][coluna] = peca
       
 def pozicao_valida(tabuleiro, coluna):
@@ -48,41 +48,41 @@ def lance_ganhador(tabuleiro, peca):
 
 
 
-tabuleiro = criar_tabuleiro()
-printa_tabuleiro(tabuleiro)
-fin_jogo = False
-jogada = 0
+# tabuleiro = criar_tabuleiro()
+# printa_tabuleiro(tabuleiro)
+# fin_jogo = False
+# jogada = 0
 
-while not fin_jogo:
-    #jogador 1 lance
-    if jogada == 0:
-        coluna = int(input("jogador 1 de o seu lance (0-5):"))
-        if pozicao_valida(tabuleiro, coluna):
-            linha = pega_proxima_coluna(tabuleiro, coluna)
-            joga_peca(tabuleiro, linha, coluna, 1)
+# while not fin_jogo:
+#     #jogador 1 lance
+#     if jogada == 0:
+#         coluna = int(input("jogador 1 de o seu lance (0-5):"))
+#         if pozicao_valida(tabuleiro, coluna):
+#             linha = pega_proxima_coluna(tabuleiro, coluna)
+#             joga_peca(tabuleiro, linha, coluna, 1)
 
 
-            if lance_ganhador(tabuleiro, 1):
-                print("jogador 1 ganhou!!!")
-                fin_jogo = True
+#             if lance_ganhador(tabuleiro, 1):
+#                 print("jogador 1 ganhou!!!")
+#                 fin_jogo = True
     
 
 
 
 
 
-    #jogador 2 lance
-    else:
-        coluna = int(input("jogador 2 de o seu lance (0-5):"))
-        if pozicao_valida(tabuleiro, coluna):
-            linha = pega_proxima_coluna(tabuleiro, coluna)
-            joga_peca(tabuleiro, linha, coluna, 2)
+#     #jogador 2 lance
+#     else:
+#         coluna = int(input("jogador 2 de o seu lance (0-5):"))
+#         if pozicao_valida(tabuleiro, coluna):
+#             linha = pega_proxima_coluna(tabuleiro, coluna)
+#             joga_peca(tabuleiro, linha, coluna, 2)
 
 
-            if lance_ganhador(tabuleiro,2):
-                print("jogador 2 ganhou!!!")
-                fin_jogo = True
+#             if lance_ganhador(tabuleiro,2):
+#                 print("jogador 2 ganhou!!!")
+#                 fin_jogo = True
 
-    printa_tabuleiro(tabuleiro)
-    jogada += 1
-    jogada = jogada % 2
+#     printa_tabuleiro(tabuleiro)
+#     jogada += 1
+#     jogada = jogada % 2
